@@ -42,7 +42,7 @@ street: street,
   
 let map = L.map("map", {
   center: [35.2176665, -80.831473],
-  zoom: 16
+  zoom: 16,
   layers: [street, CPCC]
 });
 

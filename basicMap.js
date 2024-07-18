@@ -39,6 +39,10 @@ let baseMaps = {
 street: street,
   topographic: topo
 }
+
+let overlayMaps = {
+CPCC: CPCC
+}
   
 let map = L.map("map", {
   center: [35.2176665, -80.831473],
@@ -48,8 +52,6 @@ let map = L.map("map", {
 
 L.control.layers(baseMaps, overlayMaps, {
 collapsed: false  
-});.addTo(map);
+}).addTo(map);
 
-let overlayMaps = {
-CPCC: CPCC
-}
+
